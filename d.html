@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(119, 119, 136);
+    }
+
+    span {
+        margin: 5px;
+        padding: 5px;
+        border: 2px solid red;
+        border-radius: 5px;
+    }
+
+    div {
+        margin: 5px;
+        padding: 5px;
+    }
+</style>
+
+<body>
+   Poqric Mec
+   <p id="out2"></p>
+    <div id="output"></div>
+    <script>
+        // n = 10
+        // function createRandomarray() {
+        //     for (let i = 0; i < n; i++) {
+        //         arr[i] = Math.floor(Math.random() * 31)
+        //     }
+        //     return arr
+        // }
+        // function output(a) {
+        //     let out = document.getElementById("output")
+        //     let div = document.createElement("div")
+        //     for (let i = 0; i < a.length; i++) {
+        //         let newSpan = document.createElement("span")
+        //         newSpan.innerText = a[i]
+        //         div.appendChild(newSpan)
+        //     }
+        //     out.appendChild(div)
+        // }
+        // function bubblesort(a) {
+        //     let temp;
+        //     for (let i = 0; i < a.length; i++) {
+        //         for (let j = 0; j < a.length-1; j++) {
+        //             if(a[j]>a[j+1]){
+        //                 temp=a[j]
+        //                 a[j]=a[j+1]
+        //                 a[j+1]=temp
+        //             }
+        //         }
+                
+        //     }
+        //     output(a)
+        // }
+        // function start() {
+        //     let a = createRandomarray()
+        //     output(a)
+        //     bubblesort(a)
+        // }
+        let arr = [1,3,7,9,5,6,4,9,10]
+        arr.sort(
+            function(a,b){
+                return a-b
+            }
+        )
+        out2.innerHTML=arr
+        arr.sort(
+            function(a,b){
+                return b-a
+            }
+        )
+        output.innerHTML=arr
+    </script>
+    <div>
+        
+    </div>
+</body>
+
+</html>
